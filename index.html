@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Travel Project</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+		integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-	<header class="header">
+	<header class="header none">
 		<div class="container">
 			<div class="header__top">
 				<nav class="nav">
@@ -33,7 +41,7 @@
 				<div class="header__content">
 					<div class="header__badge">explore the world</div>
 					<h1 class="header__title">Explore The Natural Beauty Of Halmahera With Us</h1>
-					<div class="header__text"> 
+					<div class="header__text">
 						<p>explore the beauty of god's earth in a beautiful forest and have fun</p>
 					</div>
 					<a href="#!" class="header__btn">Explore Now</a>
@@ -42,12 +50,48 @@
 					<img src="img/header/header-image.png" alt="Image">
 				</div>
 			</div>
-
-
-
-
 		</div>
 	</header>
+	<main class="main">
+		<section class="destinations">
+			<div class="container-right">
+				<div class="destinations-row">
+					<div class="destinations-content">
+						<h2 class="destinations__title">
+							<span>Choice Of </span>
+							Destinations
+						</h2>
+						<div class="destinations__text">
+							<p>explore the beauty of god's earth in a beautiful forest and have fun</p>
+						</div>
+						<a class="destinations__btn btn" href="#!">Exsplore Now</a>
+					</div>
+					<div class="destinations-slider">
+						<div class="slider">
+							<div class="owl-carousel">
+								<img class="slider__item" src="./img/slider/carusel01.jpg" alt="image1">
+								<img class="slider__item" src="./img/slider/carusel02.jpg" alt="image2">
+								<img class="slider__item" src="./img/slider/carusel03.jpg" alt="image3">
+							</div>
+							<button class="slider__btn slider__btn--prev">
+								<img src="img/slider/arrow-left.svg" alt="left">
+							</button>
+							<button class="slider__btn slider__btn--next">
+								<img src="img/slider/arrow-right.svg" alt="right">
+							</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</main>
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+		integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/main.js"></script>
 </body>
+
 </html>
