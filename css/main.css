@@ -6,6 +6,7 @@
 	--container-width: 1270px;
 	--container-padding: 15px;
 	--secondary: rgba(15, 31, 28, 0.5);
+	--orange: #FF7C4E;
 }
 
 body {
@@ -78,7 +79,7 @@ body {
 	max-width: unset;
 	width: 894px;
 	height: 940px;
-	
+	pointer-events: none;
 }
 
 /* NAV */
@@ -115,7 +116,14 @@ body {
 	background-color: #c4c4c4;
 	border-radius: 50px;
 }
-
+.nav__list--footer a.active::after,
+.nav__list--footer a:hover::after{
+	display: none;
+}
+.nav__list--footer a.active,
+.nav__list--footer a:hover{
+	color: var(--orange);
+}
 .nav__login {
 	display: flex;
 	align-items: center;
@@ -129,9 +137,15 @@ body {
 	font-size: 20px;
 	font-weight: 700;
 }
+.logo a{
+	/* color: inherit !important; */
+}
+.logo--footer{
+	color: var(--orange);
+}
 
 /* BUTTON */
-.btn {
+.btn--login {
 	display: inline-block;
 	padding: 13px 44px;
 	font-size: 15px;
@@ -139,6 +153,26 @@ body {
 	color: #fff;
 	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
 	border-radius: 100px;
+}
+
+.btn--login:hover {
+	color: rgb(0, 255, 89);
+	transition: color .2s ease-in;
+}
+
+.btn--login:active {
+	position: relative;
+	top: 1px;
+}
+.btn {
+}
+.btn {
+	display: inline-block;
+	padding: 25px 45px;
+	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+	border-radius: 27px;
+	font-size: 20px;
+	font-weight: 600;
 }
 
 .btn:hover {
@@ -150,7 +184,6 @@ body {
 	position: relative;
 	top: 1px;
 }
-
 /* HEADER CONTENT */
 .header__content {}
 
@@ -229,27 +262,9 @@ body {
 	color: var(--secondary) ;
 }
 .destinations__btn {
-}
-.btn {
-}
-.btn {
-	display: inline-block;
-	padding: 25px 45px;
-	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
-	border-radius: 27px;
-	font-size: 20px;
-	font-weight: 600;
+	padding: 25px 44px;
 }
 
-.btn:hover {
-	color: rgb(0, 255, 89);
-	transition: color .2s ease-in;
-}
-
-.btn:active {
-	position: relative;
-	top: 1px;
-}
 .destinations-slider {
 }
 /* SLIDER */
@@ -402,6 +417,7 @@ color: var(--secondary);
 	color: var(--secondary);
 }
 .cta__button {
+	color: #fff ;
 }
 
 /* SUBSCRIBE */
@@ -441,4 +457,19 @@ color: var(--secondary);
 	font-weight: 600;
 	padding: 34px 86px;
 	border-radius: 35px;
+	color: #fff;
+}
+
+/* FOOTER */
+.footer{
+	padding: 56px 0 74px;
+}
+.footer a{
+color: var(--secondary);
+}
+.logo--footer a{
+	color: var(--orange);
+}
+.footer a.btn--login{
+	color: #fff;
 }
